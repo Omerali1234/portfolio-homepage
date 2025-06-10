@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Creating a Basic Home Page</h1>
+        <p>Aspiring Cyber Security Specialist</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Omer. I am currently studying for an Access to HE Diploma in Computing at Sheffield College. I have a strong interest in cyber security, web development, and cloud computing. I am passionate about creating secure and accessible digital experiences, and I aim to pursue a degree in Cyber Security at Sheffield Hallam university.</p>
+        </section>
+        <section id="projects">
+            <h2>Featured Project</h2>
+            <h3>My Personal Portfolio Website</h3>
+            <p>This project is my personal portfolio website, designed to showcase my skills and projects. It was created using HTML and CSS as part of my Web Page Design and Production coursework. The site includes a dark/light mode toggle and a downloadable CV to enhance accessibility and professionalism.</p>
+            <img src="images/project1.jpg" alt="Photo of me for Portfolio" width="400">
+        </section>
+        <section id="contact">
+            <h2>Contact</h2><p><a href="CV/cv.pdf" download>Download My CV (PDF)</a></p>
+            <p>You can reach me via email: <a href="mailto:843016@student.sheffcol.ac.uk">843016@student.sheffcol.ac.uk</a></p>
+            <p>GitHub: <a href="https://github.com/Omer1234" target="_blank">github.com/Omer1234</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/Omer" target="_blank">linkedin.com/in/Omer</a></p>
+
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2025 Omer. All rights reserved.</p>
+    </footer>
+    <button id="toggle-dark-mode">Toggle Dark/Light Mode</button>
+
+<script>
+    const toggleButton = document.getElementById('toggle-dark-mode');
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</body>
+</html>

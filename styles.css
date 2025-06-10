@@ -1,0 +1,110 @@
+/* Basic Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9fafb; /* very light grey */
+    color: #111827; /* near black text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #0f172a; /* deep navy blue */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #3b82f6; /* lighter blue for hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #0f172a; /* deep navy blue (matches header) */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Links inside main content */
+main a {
+    color: #2563eb; /* blue for links */
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode nav a {
+    color: #f0f0f0;
+}
+
+body.dark-mode nav a:hover {
+    color: #00ffff;
+}
+
+body.dark-mode main a {
+    color: #66ccff;
+}
+
+/* Dark Mode Toggle Button */
+#toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+    font-weight: bold;
+}
+#contact {
+    margin-bottom: 60px; /* adds space below contact section */
+}
